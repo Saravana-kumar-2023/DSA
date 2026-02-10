@@ -7,8 +7,17 @@ public class Pattern {
 		Scanner sc = new Scanner(System.in); 
 		System.out.println("Enter a value : ");
 		int val = sc.nextInt();
-		 
-		pattern22(val);
+		
+		pattern12(val);
+		pattern13(val);
+		pattern14(val);
+		pattern15(val);
+		pattern16(val);
+		pattern17(val);
+		pattern18(val);
+		pattern19(val);
+		pattern20(val);
+		pattern21(val);
 		
 	}
 
