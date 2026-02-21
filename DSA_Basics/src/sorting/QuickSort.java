@@ -12,12 +12,12 @@ public class QuickSort {
 		for(int i = 0;i<n;i++) {
 			arr[i] = sc.nextInt();
 		}
-		QuickSortArray(arr,n);
+		quickSort(arr,n);
 		System.out.println("Array after sorted : "+Arrays.toString(arr));
 		sc.close();
 	}
 
-	private static void QuickSortArray(int[] arr, int n) {
+	private static void quickSort(int[] arr, int n) {
 		qs(arr,0,n-1);
 	}
 

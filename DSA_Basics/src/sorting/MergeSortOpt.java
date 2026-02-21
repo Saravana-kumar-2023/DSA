@@ -11,12 +11,12 @@ public class MergeSortOpt {
 		for(int i = 0;i<n;i++) {
 			arr[i] = sc.nextInt();
 		}
-		MergeSortArray(arr,n);
+		mergeSort(arr,n);
 		System.out.println("Array after sorted : "+Arrays.toString(arr));
 		sc.close();
 	}
 
-	private static void MergeSortArray(int[] arr,int n) {
+	private static void mergeSort(int[] arr,int n) {
 		ms(arr,0,n-1);
 	}
 	private static void ms(int[] arr,int low, int high) {
