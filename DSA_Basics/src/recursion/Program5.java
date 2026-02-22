@@ -13,7 +13,7 @@ public class Program5 {
 	}
 
 	private static int factOfN2(int n) {
-		if(n == 1)
+		if(n == 1 || n == 0)
 			return 1;
 		return n * factOfN2(n-1);
 	}
