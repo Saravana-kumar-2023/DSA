@@ -1,3 +1,4 @@
+//left rotate the array by one place
 package array;
 
 import java.util.Arrays;
@@ -13,6 +14,16 @@ public class RotateArray {
 			arr[i] = sc.nextInt();
 		}
 		System.out.println("Arrays is : "+Arrays.toString(arr));
-		
+		leftRotate(arr);
+		System.out.println("Arrays is : "+Arrays.toString(arr));
+	}
+
+	private static void leftRotate(int[] arr) {
+		int temp = arr[0];
+		int n = arr.length;
+		for(int i = 1;i<n;i++) {
+			arr[i-1] = arr[i];
+		}
+		arr[n-1] = temp;
 	}
 }
