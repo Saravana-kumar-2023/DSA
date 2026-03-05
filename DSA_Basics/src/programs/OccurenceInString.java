@@ -14,19 +14,19 @@ public class OccurenceInString {
 	}
 
 	private static int strStr(String haystack, String needle) {
-		int i = 0;
-		for(int j = 0;j<haystack.length();j++) {
-			System.out.println(i+" "+j);
-			if(haystack.charAt(j) == needle.charAt(i)) {
-				if(i == needle.length()-1) {
-					return j-i;
-				}
-				i++;
-			}
-			else {
-				i = 0;
-			}
+		if (needle.length() == 0) {
+			return 0;
 		}
-		return -1;
+	    for (int i = 0; i <= haystack.length() - needle.length(); i++) {
+	        int j = 0;
+	        while (j < needle.length() && 
+	               haystack.charAt(i + j) == needle.charAt(j)) {
+	            j++;
+	        }
+	        if (j == needle.length()) {
+	            return i;
+	        }
+	    }
+	    return -1;
 	}
 }
